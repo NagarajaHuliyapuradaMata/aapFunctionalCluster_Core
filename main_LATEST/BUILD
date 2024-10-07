@@ -8,7 +8,7 @@ cc_library(
    ,  srcs       = ["aapFunctionalCluster_Core.cpp"]
 #  ,  deps       = ["//repo_projects/pProjectFull/main_LATEST/source/SwcServiceEcuM:SwcServiceEcuM"]
    ,  hdrs       = [
-#           "interface_CommunicationManagement_VerificationStatusConfigurationByDataId.hpp"
+            "interface_Core.hpp"
       ]
    ,  includes   = ["."]
    ,  visibility = ["//visibility:public"]

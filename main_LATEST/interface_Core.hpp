@@ -1,5 +1,6 @@
+#pragma once
 /******************************************************************************/
-/* File   : aapFunctionalCluster_Core.cpp                                     */
+/* File   : interface_Core.hpp                                                */
 /* Author : Nagaraja HULIYAPURADA-MATA                                        */
 /* Date   : 01.02.1982                                                        */
 /******************************************************************************/
@@ -7,7 +8,6 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "interface_Core.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -20,14 +20,12 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class aapFunctionalCluster_Core:
-   public interface_Core
-{
+class interface_Core{
    public:
-      void Deinitialize    (void);
-      void Initialize      (void);
-      void Abort           (void);
-      void SetAbortHandler (void);
+      virtual void Deinitialize    (void) = 0;
+      virtual void Initialize      (void) = 0;
+      virtual void Abort           (void) = 0;
+      virtual void SetAbortHandler (void) = 0;
 };
 
 /******************************************************************************/
@@ -45,17 +43,6 @@ class aapFunctionalCluster_Core:
 /******************************************************************************/
 /* FUNCTIONS                                                                  */
 /******************************************************************************/
-void aapFunctionalCluster_Core::Deinitialize(void){
-}
-
-void aapFunctionalCluster_Core::Initialize(void){
-}
-
-void aapFunctionalCluster_Core::Abort(void){
-}
-
-void aapFunctionalCluster_Core::SetAbortHandler(void){
-}
 
 /******************************************************************************/
 /* EOF                                                                        */
